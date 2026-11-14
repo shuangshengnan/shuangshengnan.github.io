@@ -220,12 +220,14 @@
     autoplay: true,     // 自动播放 (注意：部分浏览器会拦截自动播放，需要用户点一下页面)
     loop: 'all',        // 循环模式
     mutex: true,        // 互斥
+    lrcType: 3, // 关键：声明歌词类型为 LRC 文件
     audio: [
       {
         title: 'Echoes_往日回响',
         author: '林冻',
         url: '/music/Echoes.mp3', // 对应 source/music/ 里的文件
         cover: '/img/music-Echoes.jpg' // 封面图，可以用你之前的头像或者放一张图在img里
+        lrc: '/music/Echoes.lrc' // 指向你的歌词文件
       },
       // 如果你想加第二首歌，照猫画虎在下面加就行
       // {
